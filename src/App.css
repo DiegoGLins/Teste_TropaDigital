@@ -3,6 +3,7 @@
 
 .buttonCadastrar {
   color: #ffff;
+  background-color: #CC6138;
   width: 260px;
   height: 62px;
   font-family: 'DM Sans';
@@ -18,6 +19,7 @@
 
 .buttonLogin {
   color: #ffff;
+  background-color: #CC6138;
   width: 194px;
   height: 61px;
   font-family: 'Poppins', sans-serif;
@@ -29,6 +31,32 @@
 
 .buttonLogin:hover {
   transform: scale(1.05, 1.05);
+}
+
+.buttonModal {
+  color: #ffff;
+  background-color: #CC6138;
+  width: 194px;
+  height: 61px;
+  font-family: 'DM Sans';
+  font-size: 30px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  margin-top: 35px;
+}
+
+.buttonCancel {
+  width: 89px;
+  height: 32px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  background-color: transparent;
+  color: #333333;
+  cursor: pointer;
+  padding-top: 15px;
 }
 
 .back {
@@ -71,4 +99,24 @@
   position: relative;
   display: flex;
   flex-direction: column;
+}
+
+.styleTitleModal {
+  font-family: 'Popins', sans-serif;
+  font-weight: 700;
+  font-size: 44.35px;
+  color: #CC6138
+}
+
+.styleTextModal {
+  font-family: 'Popins', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  text-align: center;
+}
+
+.styleTitleEmail {
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 22px;
 }
