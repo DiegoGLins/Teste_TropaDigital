@@ -12,6 +12,7 @@ import { useState } from "react"
 import CheckMe from "../components/CheckMe"
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import { useNavigate } from "react-router-dom"
+import DoneIcon from '@mui/icons-material/Done';
 
 const Cadastro = () => {
     const [showPassword, setShowPassword] = useState(false);
@@ -50,23 +51,23 @@ const Cadastro = () => {
                         <IconButton onClick={() => navUrl('/')}><ChevronLeftIcon />{'Voltar'}</IconButton>
                         <Title title={'Cadastro'} />
                         <Typography sx={{ marginTop: '2rem', fontFamily: 'DM Sans, sans-serif', fontSize: '22', fontWeight: '700', color: '#CC6138' }} variant="h5">Nome</Typography>
-                        <TextField label='Insira seu nome' type='text' variant="standard" fullWidth InputProps={{
-                            endAdornment: <InputAdornment position='end'><img style={{ width: '27px', height: '29px', padding: '0px 10px 10px 0px' }} src={''} />
+                        <TextField color='warning' label='Insira seu nome' type='text' variant="standard" fullWidth InputProps={{
+                            endAdornment: <InputAdornment position='end'><DoneIcon style={{ width: '31px', height: '33px', padding: '0px 10px 10px 0px', color: '#00a02d' }} />
                             </InputAdornment>
                         }} />
                         <Typography sx={{ marginTop: '2rem', fontFamily: 'DM Sans, sans-serif', fontSize: '22', fontWeight: '700', color: '#CC6138' }} variant="h5">E-mail</Typography>
-                        <TextField label='Insira seu e-mail' type='email' variant="standard" fullWidth InputProps={{
+                        <TextField color='warning' label='Insira seu e-mail' type='email' variant="standard" fullWidth InputProps={{
                             endAdornment: <InputAdornment position='end'><img style={{ width: '27px', height: '29px', padding: '0px 10px 10px 0px' }} src={OutlineEmail} />
                             </InputAdornment>
                         }} />
                         <Typography sx={{ marginTop: '2rem', fontFamily: 'DM Sans, sans-serif', fontSize: '22', fontWeight: '700', color: '#CC6138' }} variant='h5'>Senha</Typography>
-                        <TextField label='Insira sua senha utilizando apenas números' type={showPassword ? 'text' : 'password'} variant="standard" fullWidth InputProps={{ endAdornment: <InputAdornment position="end"><IconButton onClick={passwordVisibility} edge='end'>{showPassword ? <img style={{ width: '29px', height: '34px', padding: '0px 10px 10px 0px' }} src={eyeOn} /> : <img style={{ width: '29px', height: '33px', padding: '0px 10px 10px 0px' }} src={eyeOff} />}</IconButton></InputAdornment> }} />
+                        <TextField color='warning' label='Insira sua senha utilizando apenas números' type={showPassword ? 'text' : 'password'} variant="standard" fullWidth InputProps={{ endAdornment: <InputAdornment position="end"><IconButton onClick={passwordVisibility} edge='end'>{showPassword ? <img style={{ width: '29px', height: '34px', padding: '0px 10px 10px 0px' }} src={eyeOn} /> : <img style={{ width: '29px', height: '33px', padding: '0px 10px 10px 0px' }} src={eyeOff} />}</IconButton></InputAdornment> }} />
                         <Typography sx={{ marginTop: '2rem', fontFamily: 'DM Sans, sans-serif', fontSize: '22', fontWeight: '700', color: '#CC6138' }} variant='h5'>Confirme senha</Typography>
-                        <TextField sx={{ paddingBottom: '15px' }} label='Repita a senha criada anteriormente' type={showRepeatPassword ? 'text' : 'password'} variant="standard" fullWidth InputProps={{ endAdornment: <InputAdornment position="end"><IconButton onClick={passwordRepeatVisibility} edge='end'>{showRepeatPassword ? <img style={{ width: '29px', height: '34px', padding: '0px 10px 10px 0px' }} src={eyeOn} /> : <img style={{ width: '29px', height: '33px', padding: '0px 10px 10px 0px' }} src={eyeOff} />}</IconButton></InputAdornment> }} />
+                        <TextField color='warning' sx={{ paddingBottom: '15px' }} label='Repita a senha criada anteriormente' type={showRepeatPassword ? 'text' : 'password'} variant="standard" fullWidth InputProps={{ endAdornment: <InputAdornment position="end"><IconButton onClick={passwordRepeatVisibility} edge='end'>{showRepeatPassword ? <img style={{ width: '29px', height: '34px', padding: '0px 10px 10px 0px' }} src={eyeOn} /> : <img style={{ width: '29px', height: '33px', padding: '0px 10px 10px 0px' }} src={eyeOff} />}</IconButton></InputAdornment> }} />
                         <CheckMe children={<p>Li e Concordo com os <a style={{ color: '#CC6138' }}>Termos e Condições</a></p>} active={() => console.log()} value={false} />
                         <CheckMe children={<p style={{ color: '#CC6138' }}>Lembrar e-mail e senha</p>} active={() => console.log()} value={false} />
                         <Grid item sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginTop: '30px' }}>
-                            <button style={{ backgroundColor: '#CC6138' }} className="buttonCadastrar">Cadastrar</button>
+                            <button className="buttonCadastrar">Cadastrar</button>
                         </Grid>
                     </Grid>
                 </Grid>
