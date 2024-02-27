@@ -13,7 +13,7 @@ const router = createBrowserRouter([
         element: <Cadastro />,
     },
     {
-        path: 'Home',
+        path: '/home',
         element: <Home />
     }])
 

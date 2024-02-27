@@ -13,11 +13,14 @@ import CheckMe from "../components/CheckMe"
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import { useNavigate } from "react-router-dom"
 import DoneIcon from '@mui/icons-material/Done';
+import ModalDefault from "../components/ModalDefault"
 
 const Cadastro = () => {
+    const navigate = useNavigate()
+
     const [showPassword, setShowPassword] = useState(false);
     const [showRepeatPassword, setShowRepeatPassword] = useState(false);
-    const navigate = useNavigate()
+    const [openModal, setOpenModal] = useState<boolean>(false)
 
     const passwordVisibility = () => {
         setShowPassword(!showPassword);
@@ -29,6 +32,14 @@ const Cadastro = () => {
 
     const navUrl = (url: string) => {
         navigate(url)
+    }
+
+    const handleOpenModal = () => {
+        setOpenModal(true)
+    }
+
+    const closeModal = () => {
+        setOpenModal(false)
     }
 
     return (
@@ -67,11 +78,15 @@ const Cadastro = () => {
                         <CheckMe children={<p>Li e Concordo com os <a style={{ color: '#CC6138' }}>Termos e Condições</a></p>} active={() => console.log()} value={false} />
                         <CheckMe children={<p style={{ color: '#CC6138' }}>Lembrar e-mail e senha</p>} active={() => console.log()} value={false} />
                         <Grid item sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginTop: '30px' }}>
-                            <button className="buttonCadastrar">Cadastrar</button>
+                            <button onClick={handleOpenModal} className="buttonCadastrar">Cadastrar</button>
                         </Grid>
                     </Grid>
                 </Grid>
             </Grid>
+            <ModalDefault title={<p className="styleTitleModal">{'Confirme seu E-mail'}</p>} description={<p className="styleTextModalConfirm">{'Para finalizar seu cadastro, enviamos um e-mail de confirmação para teste.tes@gmail.com. Verifique sua caixa de entrada e clique no link “Confirmar E-mail.”'}{<br />}{<br />} {'Caso não tenha recebido o e-mail clique em “Enviar e-mail novamente” que enviaremos um novo e-mail.'}</p>} actionCancel={closeModal} open={openModal} button={<>
+                <button className="buttonModal" onClick={closeModal} autoFocus>Fechar</button>
+                <button className="buttonModalConfirmEmail" onClick={closeModal}>Enviar e-mail novamente</button>
+            </>} />
         </Grid>
     )
 }

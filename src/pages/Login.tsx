@@ -63,7 +63,7 @@ const Login = () => {
                         <Grid item sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginTop: '60px' }}>
                             <button className="buttonLogin">Entrar</button>
                             <button onClick={handleOpenModal} className="link">Esqueceu a senha ?</button>
-                            <span>Novo por aqui ?  <button onClick={() => navUrl('/cadastro')} className="link"> Cadastre-se</button></span>
+                            <span>Novo por aqui ? <button onClick={() => navUrl('/cadastro')} className="link">Cadastre-se</button></span>
                         </Grid>
                     </Grid>
                 </Grid>
