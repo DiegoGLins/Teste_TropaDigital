@@ -58,7 +58,7 @@ const Login = () => {
                             </InputAdornment>
                         }} />
                         <Typography sx={{ marginTop: '2.5rem', fontFamily: 'DM Sans, sans-serif', fontSize: '22', fontWeight: '700', color: '#CC6138' }} variant='h5'>Senha</Typography>
-                        <TextField color='warning' sx={{ paddingBottom: '15px' }} label='Insira sua senha utilizando apenas números' type={showPassword ? 'password' : 'text'} variant="standard" fullWidth InputProps={{ endAdornment: <InputAdornment position="end"><IconButton onClick={passwordVisibility} edge='end'>{showPassword ? <img style={{ width: '29px', height: '34px', padding: '0px 10px 10px 0px' }} src={eyeOff} /> : <img style={{ width: '29px', height: '33px', padding: '0px 10px 10px 0px' }} src={eyeOn} />}</IconButton></InputAdornment> }} />
+                        <TextField color='warning' sx={{ paddingBottom: '15px' }} label='Insira sua senha utilizando apenas números' type={showPassword ? 'password' : 'text'} variant="standard" fullWidth InputProps={{ endAdornment: <InputAdornment position="end"><IconButton onClick={passwordVisibility} edge='end'>{showPassword ? <img style={{ width: '29px', height: '34px', padding: '0px 10px 10px 0px' }} src={eyeOn} /> : <img style={{ width: '29px', height: '33px', padding: '0px 10px 10px 0px' }} src={eyeOff} />}</IconButton></InputAdornment> }} />
                         <CheckMe children={<p style={{ color: '#CC6138' }}>Lembrar e-mail e senha</p>} active={() => console.log()} value={false} />
                         <Grid item sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginTop: '60px' }}>
                             <button className="buttonLogin">Entrar</button>
