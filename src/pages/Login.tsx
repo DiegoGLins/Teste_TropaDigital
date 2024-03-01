@@ -34,6 +34,10 @@ const Login = () => {
         setOpenModal(false)
     }
 
+    const handleLogin = () => {
+        navigate('/home')
+    }
+
     return (
         <Grid container sx={{ width: '100vw', height: '100vh' }}>
             <Grid item xs={6} sx={{
@@ -61,7 +65,7 @@ const Login = () => {
                         <TextField color='warning' sx={{ paddingBottom: '15px' }} label='Insira sua senha utilizando apenas números' type={showPassword ? 'text' : 'password'} variant="standard" fullWidth InputProps={{ endAdornment: <InputAdornment position="end" sx={{ padding: '0px 10px 10px 0px' }}><IconButton onClick={passwordVisibility} edge='end' >{showPassword ? <img style={{ width: '29px', height: '34px' }} src={eyeOff} /> : <img style={{ width: '29px', height: '33px' }} src={eyeOn} />}</IconButton></InputAdornment> }} />
                         <CheckMe children={<p style={{ color: '#CC6138' }}>Lembrar e-mail e senha</p>} active={() => console.log()} value={false} />
                         <Grid item sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginTop: '60px' }}>
-                            <button className="buttonLogin">Entrar</button>
+                            <button onClick={handleLogin} className="buttonLogin">Entrar</button>
                             <button onClick={handleOpenModal} className="link">Esqueceu a senha ?</button>
                             <span>Novo por aqui ? <button onClick={() => navUrl('/cadastro')} className="link">Cadastre-se</button></span>
                         </Grid>
