@@ -9,7 +9,7 @@ A parte lógica funcional de captura dos eventos nos inputs nas telas de login e
 </div>
  <br/>
 <div align='center' style={display: 'flex', alignItems='center'}>
-  <p float='center'>
+  <p float='center' gap='5px'>
     <img src="https://github.com/DiegoGLins/Teste_TropaDigital/assets/107010634/5a8e22b9-c052-47fc-b6f9-b992a4c54ddf" alt="login" width="40%">
     <img src="https://github.com/DiegoGLins/Teste_TropaDigital/assets/107010634/1213e4d2-6cc5-43b0-9a68-688e06a6c315" alt="cadastro" width="40%" heigth='80%'> 
   </p>
