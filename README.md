@@ -18,7 +18,7 @@ A parte lógica funcional de captura dos eventos nos inputs nas telas de login e
  <br/>
 <div align='center' style={display: 'flex', alignItems='center'}>
   <p float='center'>
-    <img src="https://github.com/DiegoGLins/Teste_TropaDigital/assets/107010634/b6c6df6d-a8f3-4c17-b3c5-1af6dd29b063" alt="modal-login" width="40%">
+    <img src="https://github.com/DiegoGLins/Teste_TropaDigital/assets/107010634/b6c6df6d-a8f3-4c17-b3c5-1af6dd29b063" alt="modal-login" width="40%" style={padding-right: 15px}>
     <img src="https://github.com/DiegoGLins/Teste_TropaDigital/assets/107010634/437327e7-602d-4c5a-800d-df189264eeb2" alt="modal-cadastro" width="40%" heigth='80%'> 
   </p>
 </div>
