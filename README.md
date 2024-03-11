@@ -1,7 +1,12 @@
-Este repositório é a construção de algumas telas como avaliação de um processo seletivo na empresa Tropa Digital.
-A parte lógica funcional de captura dos eventos nos inputs nas telas de login e cadastro, bem como a criação de um usuário e o login do mesmo, não foram implementadas, pois o objetivo era tão somente reproduzir a parte visual de cada tela baseado num protótipo do Figma
+<div>
+ <p>
+  Este repositório é a construção de algumas telas como avaliação de um processo seletivo na empresa Tropa Digital.
+A parte lógica funcional de captura dos eventos nos inputs nas telas de login e cadastro, bem como a criação de um usuário e o login do mesmo, não foram implementadas, pois o objetivo era tão somente reproduzir a parte visual de cada tela baseado num protótipo do Figma.
+ </p>
+</div>
+<br/>
 O código foi construído em React.JS com typescript. Foi utilizado também MaterialUI em alguns componentes e CSS para estilizações mais personalizadas
-
+<br/>
  <br/>
 <div align='center' style={display: 'flex', alignItems='center'}>
   <p float='center'>
