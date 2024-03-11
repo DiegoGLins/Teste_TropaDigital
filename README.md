@@ -1,30 +1,9 @@
-# React + TypeScript + Vite
+Este repositório é a construção de algumas telas como avaliação de um processo seletivo na empresa Tropa Digital.
+A parte lógica funcional de captura dos eventos nos inputs nas telas de login e cadastro, bem como a criação de um usuário e o login do mesmo, não foram implementadas, pois o objetivo era tão somente reproduzir a parte visual de cada tela baseado num protótipo do Figma
+O código foi construído em React.JS com typescript. Foi utilizado também MaterialUI em alguns componentes e CSS para estilizações mais personalizadas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Tela_Login](https://github.com/DiegoGLins/Teste_TropaDigital/assets/107010634/5a8e22b9-c052-47fc-b6f9-b992a4c54ddf)
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+![Tela_Cadastro](https://github.com/DiegoGLins/Teste_TropaDigital/assets/107010634/1213e4d2-6cc5-43b0-9a68-688e06a6c315)
+![Modal_Login](https://github.com/DiegoGLins/Teste_TropaDigital/assets/107010634/b6c6df6d-a8f3-4c17-b3c5-1af6dd29b063)
+![Modal_Cadastro](https://github.com/DiegoGLins/Teste_TropaDigital/assets/107010634/437327e7-602d-4c5a-800d-df189264eeb2)
